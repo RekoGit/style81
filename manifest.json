@@ -1,7 +1,7 @@
 {
   "name": "style81",
   "description": "81道場の棋譜再生画面を見やすくスタイルします",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "manifest_version": 3,
   "icons": {
     "128": "icon.png"
