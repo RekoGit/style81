@@ -2,8 +2,14 @@
 let forum = document.getElementsByClassName('forum_post');
 if (forum.length > 0) {
   let comments = forum[0].getElementsByTagName('pre')[0];
-  comments.style.height = '20vh';
+  comments.style.height = '18vh';
   comments.style.overflow = 'scroll';
+}
+
+let form = document.getElementsByClassName('indent2');
+if (form.length > 0) {
+  form[0].style.height = '20vh';
+  form[0].style.overflow = 'scroll';
 }
 
 // スクロール（将棋盤とコメントが見える位置）
@@ -15,6 +21,7 @@ function main(e) {
     if (board != null) {
       clearInterval(jsInitCheckTimer);
     }
+
     board.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
